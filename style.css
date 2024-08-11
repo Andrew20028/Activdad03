@@ -1,0 +1,184 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Cabecera */
+.head {
+    background-color: #111; /* Fondo gris oscuro */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f90; /* Efecto hover en naranja */
+}
+
+/* Sección de contenido */
+.content {
+    padding: 80px 20px 20px; /* Ajustar padding para compensar el navbar fijo */
+    background-color: #222; /* Fondo gris oscuro para secciones */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.content p, .content ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.content ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.btn-home {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f90;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #ffb84d; /* Color más claro al pasar el mouse */
+}
+
+/* Estilos de la sección 'sau' */
+.sau {
+    background-color: #333;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: #ccc;
+}
+
+/* Estilos de la sección 'about' */
+.about {
+    background-color: #333;
+}
+
+.about h3 {
+    margin-top: 20px;
+}
+
+.about ul {
+    margin-left: 20px;
+    list-style: square;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 100px 10px 20px;
+    }
+}
